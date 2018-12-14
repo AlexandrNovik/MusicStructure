@@ -1,17 +1,9 @@
 package com.music.structure;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main {
 
@@ -31,8 +23,8 @@ public class Main {
         txtSourceFile = args[0];
         outRootDirectory = args[1];
         System.out.println("started work with " + txtSourceFile);
-        ArrayList<String> paths = new ArrayList<String>();
-        ArrayList<String> finalPaths = new ArrayList<String>();
+        ArrayList<String> paths = new ArrayList<>();
+        ArrayList<String> finalPaths = new ArrayList<>();
         ArrayList<String> newPaths;
 
         try {
