@@ -11,15 +11,17 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
-public class Main extends Application {
+public class Main {
 
     private static String txtSourceFile;
     private static String outRootDirectory;
 
     public static void main(String[] args) {
-        launch(args);
+//         launch(args);
 //        createStructureWithArgs(args);
+        createStructureWithArgs(new String[]{"C:\\Users\\ali\\Favorites\\source\\HS1_10.00-13.00.txt" ,"C:\\Users\\ali\\Documents\\music"});
     }
 
     private static void createStructureWithArgs(String[] args) {
@@ -34,12 +36,17 @@ public class Main extends Application {
         ArrayList<String> finalPaths = new ArrayList<String>();
         ArrayList<String> newPaths;
 
-        readFile(paths);
-        newPaths = createNewPath(paths);
+        try {
+            readFile(paths);
+            newPaths = createNewPath(paths);
 
-        copyFilesToRootFolder(paths, newPaths, finalPaths);
-        createPlayListTxt(finalPaths);
-        System.out.println("DONE! =)");
+            copyFilesToRootFolder(paths, newPaths, finalPaths);
+            createPlayListTxt(finalPaths);
+            System.out.println("DONE! =)");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private static void createPlayListTxt(ArrayList<String> paths) {
@@ -111,24 +118,15 @@ public class Main extends Application {
         return newPathList;
     }
 
-    private static void readFile(ArrayList<String> sb) {
-        try {
-            Scanner in = new Scanner(new FileReader(txtSourceFile));
-            while (in.hasNext()) {
-                sb.add(in.next());
+    private static void readFile(ArrayList<String> sb) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(txtSourceFile))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                sb.add(line);
             }
-            in.close();
         } catch (FileNotFoundException e) {
             System.out.println("FileNotFoundException for " + txtSourceFile);
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        stage.setTitle("Yo yo yo");
-        stage.setScene(new Scene(root, 300, 275));
-        stage.show();
     }
 }
