@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c541e101-e345-43e8-81aa-08ee9f72bcef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/music_structure_jar/music_structure.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/music_structure_jar/music_structure.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/music_structure/com/music/structure/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/music_structure/com/music/structure/Main.class" afterDir="false" />
+    <list default="true" id="c541e101-e345-43e8-81aa-08ee9f72bcef" name="Default" comment="fixes">
       <change beforePath="$PROJECT_DIR$/src/com/music/structure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/music/structure/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/music/structure/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+            <state relative-caret-position="246">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,7 +113,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543270716789" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544811039052" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -172,6 +169,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542898831021</updated>
     </task>
+    <task id="LOCAL-00001" summary="fixes">
+      <created>1544810807733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544810807733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -202,8 +207,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995005" weight="0.32997987" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.497003" weight="0.35714287" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014985" side_tool="true" visible="true" weight="0.39958805" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4995005" weight="0.32997987" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500999" side_tool="true" weight="0.32955715" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.499001" weight="0.32955715" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -216,17 +221,35 @@
       <window_info anchor="right" id="Maven" order="8" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/music/structure/Main.java</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -258,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/music/structure/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+        <state relative-caret-position="246">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

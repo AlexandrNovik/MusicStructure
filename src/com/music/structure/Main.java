@@ -19,9 +19,8 @@ public class Main {
     private static String outRootDirectory;
 
     public static void main(String[] args) {
-//         launch(args);
-//        createStructureWithArgs(args);
-        createStructureWithArgs(new String[]{"C:\\Users\\ali\\Favorites\\source\\HS1_10.00-13.00.txt" ,"C:\\Users\\ali\\Documents\\music"});
+        createStructureWithArgs(args);
+//        createStructureWithArgs(new String[]{"C:\\Users\\ali\\Favorites\\source\\HS1_10.00-13.00.txt" ,"C:\\Users\\ali\\Documents\\music"});
     }
 
     private static void createStructureWithArgs(String[] args) {
